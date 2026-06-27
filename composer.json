@@ -1,0 +1,55 @@
+{
+    "name": "barkapay/payhub-php",
+    "description": "Official PHP SDK for the PayHub payments API — mobile money & crypto, one API across countries.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "payhub",
+        "barkapay",
+        "payments",
+        "mobile money",
+        "mtn",
+        "orange",
+        "moov",
+        "wave",
+        "west africa",
+        "api",
+        "sdk"
+    ],
+    "homepage": "https://payhub.africa/developers",
+    "support": {
+        "issues": "https://github.com/BarkaPay/payhub-php/issues",
+        "source": "https://github.com/BarkaPay/payhub-php"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.59",
+        "phpstan/phpstan": "^1.11",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PayHub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PayHub\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse",
+        "cs": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
